@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="bar">
+        <div class="colorBar">
+            <input type="color" name="color" id="color">
+            <input type="button" value="fill" id="fill" class="fill btn" onclick="fillbtn()">
+            <input type="button" value="clear" id="clear" class="clear btn" onclick="clearbtn()">
+        </div>
+            <div class="lineWeightBar">
+                <input id="lineW" class="lineW" type="range" value="10" min="1" max="100" step="1">
+                <span class="lineWeightValue" id="lineWeightValue">100</span>
+            </div>
+    </div>
+    <canvas id="canvas" class="canvas"></canvas>
+    <div id="status">By Sonny</div>
+</body>
+</html>
